@@ -19,7 +19,7 @@ const getData = async () => {
     const response = await fetch(ENDPOINT);
     let data = await response.json();
 
-    data.forEach((element) => savedData.push(element));
+    data.forEach((element) => savedData.push(element)); //nemanau kad reikia bet palieku jog daug kartu galima prideti. kitu atveju tiesiog deaktyvuoti btn
   } catch (error) {
     console.error(error);
   }
